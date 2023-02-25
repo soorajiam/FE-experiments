@@ -1,0 +1,70 @@
+
+:root {
+    --border: rgb(3, 169, 244);
+    
+    --g1: rgb(98, 0, 234);
+    --g2: rgb(236, 64, 122);
+    --g3: rgb(253, 216, 53);
+  }
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: "Space Mono", monospace;
+  }
+  
+  body{
+    background: rgb(27, 26, 26);
+  }
+
+  p{
+    color: white;
+    font-size: 1rem;
+    font-family: "Space Mono", monospace;
+  }
+
+  a{
+    color: rgb(41, 101, 231)
+  }
+
+  @keyframes rotate {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+    
+}
+
+
+#blob{
+ background-color: white; 
+ height: 100px;
+ aspect-ratio: 1;  
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ border-radius: 50%;
+ background: linear-gradient(
+    to right,
+    aquamarine,
+    red
+ );
+ animation: rotate 20s infinite;
+ z-index: -2;
+ filter: blur(50px);
+}
+
+/* #blur{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    backdrop-filter: blur(50px);
+} */
+
+
+  
+  
